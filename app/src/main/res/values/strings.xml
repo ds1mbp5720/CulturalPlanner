@@ -1,3 +1,83 @@
 <resources>
-    <string name="app_name">CulturalPlanner</string>
+    <string name="app_name">서울 문화생활 플래너</string>
+
+    <string name="main_tab_1">시간계획</string>
+    <string name="main_tab_2">축제 목록</string>
+    <string name="main_tab_3">주변정보 지도</string>
+
+    <string name="poi_category_1">CE7</string>
+    <string name="poi_category_2">FD6</string>
+    <string name="poi_category_3">CT1</string>
+
+    <string name="notFindViewModel">해당 뷰모델 못찾을수 없습니다.</string>
+
+    <string name="input_signal">inputTypeSignal</string>
+    <string name="input_add">add</string>
+    <string name="input_edit">edit</string>
+    <string name="input_festival">festival</string>
+    <string name="input_poi">poi</string>
+
+    <string name="position">position</string>
+    <string name="id">id</string>
+    <string name="title">title</string>
+    <string name="time">time</string>
+    <string name="place">place</string>
+    <string name="memo">memo</string>
+
+    <string name="insertMarkerTitle">일정 장소</string>
+    <string name="festivalMarkerTitle">행사 장소</string>
+
+    <string name="dateBTN">날짜</string>
+    <string name="insert_btn">등록</string>
+    <string name="show_map_checkbox">위치설정</string>
+    <string name="map">지도</string>
+    <string name="input_schedule">일정 입력</string>
+    <string name="schedule_title">제목</string>
+    <string name="schedule_time">시간</string>
+    <string name="schedule_place">장소</string>
+    <string name="schedule_memo">메모</string>
+    <string name="string_info">일정 정보</string>
+
+    <string name="add">add</string>
+    <string name="edit">edit</string>
+    <string name="apiInput">apiInput</string>
+    <string name="insertWrongType">Wrong Type</string>
+
+    <string name="deleteTypeTimeSheet">TimeSheet</string>
+    <string name="deleteTypeTimeTable">TimeTable</string>
+    <string name="dialogMessageToDelete">정말로 지우시겠습니까?</string>
+
+    <string name="checkPermissonMent">현재 위치를 확인하시려면 위치 권한을 허용해주세요.</string>
+    <string name="checkSettingLocationMent">현재 위치를 확인하시려면 설정에서 위치 권한을 허용해주세요.</string>
+    <string name="acceptLocation">"위치 권한이 승인되었습니다"</string>
+    <string name="refuseLocation">"위치 권한이 거절되었습니다"</string>
+    <string name="askGPS">GPS를 켜주세요</string>
+    <string name="cancel">취소</string>
+    <string name="check">확인</string>
+
+    <string name="fixDateMessage">날짜를 수정하세요.</string>
+    <string name="notFestival">예정된 행사가 없습니다.</string>
+
+    <string name="emptyTimeTableMessage">예정된 일정이 없습니다.</string>
+
+    <string name="findFestivalLocation">행사 장소 주변 정보를 얻었습니다.</string>
+    <string name="notFindFestivalLocation">장소가 등록되지 않은 행사입니다.</string>
+
+    <string-array name="category">
+        <item>전체</item>
+        <item>전시/미술</item>
+        <item>뮤지컬/오페라</item>
+        <item>연극</item>
+        <item>무용</item>
+        <item>영화</item>
+        <item>국악</item>
+        <item>콘서트</item>
+        <item>축제-문화/예술</item>
+        <item>축제-전통/역사</item>
+        <item>축제-시민화합</item>
+        <item>클래식</item>
+        <item>축제-기타</item>
+        <item>독주/독창회</item>
+        <item>기타</item>
+    </string-array>
 </resources>
