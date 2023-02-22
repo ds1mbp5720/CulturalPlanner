@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import com.lee.culturalplanner.BR
 
 abstract class BaseFragment<T : ViewDataBinding, E : BaseViewModel> : Fragment() {
     lateinit var dataBinding: T
@@ -22,7 +23,7 @@ abstract class BaseFragment<T : ViewDataBinding, E : BaseViewModel> : Fragment()
 
         dataBinding = DataBindingUtil.inflate(inflater, layoutId, container, false)
         dataBinding.lifecycleOwner = viewLifecycleOwner
-        //dataBinding.setVariable(BR.viewModel, viewModel)
+        dataBinding.setVariable(BR.viewModel, viewModel)
 
         return dataBinding.root
     }
