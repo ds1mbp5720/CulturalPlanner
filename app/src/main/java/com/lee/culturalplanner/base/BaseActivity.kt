@@ -43,7 +43,9 @@ abstract class BaseActivity<T : ViewDataBinding, E : BaseViewModel> : AppCompatA
     private fun initDataBinding() {
         dataBinding = DataBindingUtil.setContentView(this, layoutId)
         dataBinding.lifecycleOwner = this
-        //dataBinding.setVariable(BR.viewModel, viewModel)
+        dataBinding.setVariable(BR.viewModel, viewModel)
+
+
     }
     open fun initObserve() {
 
