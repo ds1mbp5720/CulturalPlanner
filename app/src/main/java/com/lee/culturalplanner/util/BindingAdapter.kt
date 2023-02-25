@@ -1,8 +1,6 @@
 package com.lee.culturalplanner.util
 
 import android.view.View
-import android.widget.EditText
-import android.widget.TextView
 import androidx.databinding.BindingAdapter
 
 object BindingAdapter {
