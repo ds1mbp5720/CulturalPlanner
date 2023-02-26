@@ -17,7 +17,7 @@
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager_main"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,106 +32,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:tabIndicatorHeight="3dp"
-            app:tabBackground="?android:attr/windowBackground">
+            app:tabIndicatorHeight="3dp">
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/ti_time"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="@{()->viewModel.onEventClick(Event.TimeTable.INSTANCE)}"
-                android:icon="@drawable/ic_baseline_calendar_month_24" />
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/ti_festival"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="@{()->viewModel.onEventClick(Event.Festival.INSTANCE)}"
-                android:icon="@drawable/ic_baseline_view_list_24" />
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/ti_poi_map"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="@{()->viewModel.onEventClick(Event.POIMap.INSTANCE)}"
-                android:icon="@drawable/ic_baseline_map_24" />
         </com.google.android.material.tabs.TabLayout>
-
-        <!--        <FrameLayout-->
-        <!--            android:id="@+id/fl_receipt"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:padding="12dp"-->
-        <!--            app:layout_constraintEnd_toStartOf="@id/fl_progress"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent">-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/tw_time"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:gravity="center"-->
-        <!--                android:lineSpacingExtra="6dp"-->
-        <!--                android:onClick="@{()->viewModel.onEventClick(Event.TimeTable.INSTANCE)}"-->
-        <!--                android:background="@drawable/ic_baseline_calendar_month_24"-->
-        <!--                android:textColor="@color/black"-->
-        <!--                android:paddingStart="16dp"-->
-        <!--                android:paddingTop="8dp"-->
-        <!--                android:paddingEnd="16dp"-->
-        <!--                android:paddingBottom="8dp"-->
-        <!--                android:textStyle="normal" />-->
-        <!--        </FrameLayout>-->
-
-        <!--        <FrameLayout-->
-        <!--            android:id="@+id/fl_progress"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:padding="12dp"-->
-        <!--            app:layout_constraintEnd_toStartOf="@id/fl_complete"-->
-        <!--            app:layout_constraintStart_toEndOf="@id/fl_receipt"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent">-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/tw_festival"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:gravity="center"-->
-        <!--                android:lineSpacingExtra="6dp"-->
-        <!--                android:onClick="@{()->viewModel.onEventClick(Event.Festival.INSTANCE)}"-->
-        <!--                android:background="@drawable/ic_baseline_view_list_24"-->
-        <!--                android:paddingStart="16dp"-->
-        <!--                android:paddingTop="8dp"-->
-        <!--                android:paddingEnd="16dp"-->
-        <!--                android:paddingBottom="8dp"-->
-        <!--                android:textSize="14dp"-->
-        <!--                android:textStyle="normal" />-->
-        <!--        </FrameLayout>-->
-
-        <!--        <FrameLayout-->
-        <!--            android:id="@+id/fl_complete"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:padding="12dp"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toEndOf="@id/fl_progress"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent">-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/tw_poimap"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:gravity="center"-->
-        <!--                android:lineSpacingExtra="6dp"-->
-        <!--                android:onClick="@{()->viewModel.onEventClick(Event.POIMap.INSTANCE)}"-->
-        <!--                android:background="@drawable/ic_baseline_map_24"-->
-        <!--                android:paddingStart="16dp"-->
-        <!--                android:paddingTop="8dp"-->
-        <!--                android:paddingEnd="16dp"-->
-        <!--                android:paddingBottom="8dp"-->
-        <!--                android:textSize="14dp"-->
-        <!--                android:textStyle="normal" />-->
-        <!--        </FrameLayout>-->
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

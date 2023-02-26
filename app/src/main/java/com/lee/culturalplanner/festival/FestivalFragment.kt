@@ -17,7 +17,6 @@ class FestivalFragment:BaseFragment<FestivallistFragmentLayoutBinding, FestivalV
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         adapter = FestivalAdapter()
         adapter.setViewModel(viewModel)
         dataBinding.festivalList.adapter = adapter
@@ -26,14 +25,14 @@ class FestivalFragment:BaseFragment<FestivallistFragmentLayoutBinding, FestivalV
         dataBinding.festivalList.addOnItemTouchListener(this)
     }
 
+    override fun initObserve() {
+        super.initObserve()
+    }
+
     override fun onInterceptTouchEvent(rv: RecyclerView, e: MotionEvent): Boolean {
         TODO("Not yet implemented")
     }
-
-    override fun onTouchEvent(rv: RecyclerView, e: MotionEvent) {
-        TODO("Not yet implemented")
-    }
-
+    override fun onTouchEvent(rv: RecyclerView, e: MotionEvent) {}
     override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {
         TODO("Not yet implemented")
     }
