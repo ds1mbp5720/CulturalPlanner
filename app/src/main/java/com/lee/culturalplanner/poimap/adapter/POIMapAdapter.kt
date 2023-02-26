@@ -5,9 +5,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.lee.culturalplanner.base.BaseViewHolder
 import com.lee.culturalplanner.databinding.PoiListRecyclerBinding
 import com.lee.culturalplanner.poimap.POIMapViewModel
+import com.lee.culturalplanner.poimap.data.POIData
 
 class POIMapAdapter: RecyclerView.Adapter<BaseViewHolder>() {
-
+    private val items = mutableListOf<POIData.Document>()
     private lateinit var viewModel:POIMapViewModel
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         TODO("Not yet implemented")
@@ -27,7 +28,5 @@ class POIMapAdapter: RecyclerView.Adapter<BaseViewHolder>() {
 
         }
     }
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = items.size
 }

@@ -1,7 +1,6 @@
 package com.lee.culturalplanner.base
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
@@ -13,9 +12,8 @@ abstract class BaseActivity<T : ViewDataBinding, E : BaseViewModel> : AppCompatA
     abstract val layoutId: Int
     abstract val viewModel: E
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         initObserve()
         initDataBinding()
     }
@@ -43,7 +41,9 @@ abstract class BaseActivity<T : ViewDataBinding, E : BaseViewModel> : AppCompatA
     private fun initDataBinding() {
         dataBinding = DataBindingUtil.setContentView(this, layoutId)
         dataBinding.lifecycleOwner = this
-        //dataBinding.setVariable(BR.viewModel, viewModel)
+        dataBinding.setVariable(BR.viewModel, viewModel)
+
+
     }
     open fun initObserve() {
 
